@@ -1,0 +1,131 @@
+{
+  "name": "Example Extension",
+  "uniqid": "ext.core.example",
+  "version": "5",
+
+  "requiredVersion": "1.2.2",
+
+  "menu": {
+    "categorie": "1",
+    "icon": "fa fas fa-plug",
+    "params": ""
+  },
+
+  "adminGroupName": "Admin_Ext_Example",
+  "aclGroupName": "ext_example",
+
+  "widgets": [
+    {
+      "type": "header",
+      "title": "Header Counter",
+      "class": "",
+      "params": {}
+    }
+  ],
+
+  "submenu": [
+    {
+      "title": "Default",
+      "icon": "fa fa-cogs",
+      "url": {
+        "page": "ext_example",
+        "params": {}
+      }
+    },
+    {
+      "title": "si-Components",
+      "icon": "fa fa-cogs",
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "components"
+        }
+      }
+    },
+    {
+      "title": "Frontend",
+      "icon": "fa fa-book",
+      "menu": false,
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "frontend"
+        }
+      }
+    },
+    {
+      "title": "HTML",
+      "icon": "fa fa-book",
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "html"
+        }
+
+      }
+    },
+    {
+      "title": "Overwrite",
+      "icon": "fa fa-book",
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "overwrite"
+        }
+      }
+    },
+    {
+      "title": "Modul",
+      "icon": "fa fa-book",
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "modul"
+        }
+      }
+    },
+    {
+      "admin": true,
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "default",
+          "admin": "true"
+        }
+      },
+      "title": "Einstellungen",
+      "icon": "fa fa-sliders-h"
+    },
+    {
+      "admin": true,
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "acl",
+          "admin": "true"
+        }
+      },
+      "title": "Benutzerrechte",
+      "icon": "fa fa-user-shield"
+    },
+    {
+      "admin": true,
+      "title": "Admin Custom",
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "custom",
+          "admin": "true"
+        }
+      },
+
+      "icon": "fa fa-cog"
+    }
+    
+
+    
+  ]
+
+
+
+}
