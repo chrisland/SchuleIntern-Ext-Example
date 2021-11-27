@@ -218,6 +218,10 @@
                         <label>si-table-style-firstLeft</label>
                         - Erste Spalte linksbündig
                     </li>
+                    <li>
+                        <label>si-table-style-alltLeft</label>
+                        - Alle Spalten linksbündig
+                    </li>
                 </ul>
                 <h4>Code:</h4>
                 <textarea readonly><table class="si-table">

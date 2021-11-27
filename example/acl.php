@@ -1,9 +1,9 @@
 <?php
 
-class extExampleOverwrite extends AbstractPage {
-	
+class extExampleAcl extends AbstractPage {
+
 	public static function getSiteDisplayName() {
-		return 'Example Extension - Overwrite';
+		return 'Example Extension - Acl';
 	}
 
 	public function __construct($request = [], $extension = []) {
@@ -11,16 +11,21 @@ class extExampleOverwrite extends AbstractPage {
 		$this->checkLogin();
 	}
 
+
 	public function execute() {
 
 		//$this->getRequest();
-		//$this->getAcl();
 
-		
 		$this->render([
-			"tmpl" => "overwrite"
+			"tmpl" => "acl",
+            "vars" => [
+                "acl" => $this->getAcl(),
+                "aclAll" => $this->getAclAll()
+            ]
 		]);
 
 	}
+
+
 
 }

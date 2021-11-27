@@ -3,7 +3,7 @@
 class extExampleDefault extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - Default';
+		return 'Example Extension - Default';
 	}
 
 	public function __construct($request = [], $extension = []) {

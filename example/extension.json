@@ -1,7 +1,7 @@
 {
   "name": "Example Extension",
   "uniqid": "ext.core.example",
-  "version": "5",
+  "version": "6",
 
   "requiredVersion": "1.2.2",
 
@@ -16,9 +16,10 @@
 
   "widgets": [
     {
-      "type": "header",
       "title": "Header Counter",
-      "class": "",
+      "uniqid": "example.counter",
+      "position": "header",
+      "class": "extExampleWidgetCounter",
       "params": {}
     }
   ],
@@ -61,7 +62,6 @@
         "params": {
           "view": "html"
         }
-
       }
     },
     {
@@ -85,6 +85,18 @@
       }
     },
     {
+      "title": "Acl",
+      "icon": "fa fa-user-shield",
+      "url": {
+        "page": "ext_example",
+        "params": {
+          "view": "acl"
+        }
+      }
+    },
+    {
+      "title": "Einstellungen",
+      "icon": "fa fa-sliders-h",
       "admin": true,
       "url": {
         "page": "ext_example",
@@ -92,11 +104,11 @@
           "view": "default",
           "admin": "true"
         }
-      },
-      "title": "Einstellungen",
-      "icon": "fa fa-sliders-h"
+      }
     },
     {
+      "title": "Benutzerrechte",
+      "icon": "fa fa-user-shield",
       "admin": true,
       "url": {
         "page": "ext_example",
@@ -104,22 +116,19 @@
           "view": "acl",
           "admin": "true"
         }
-      },
-      "title": "Benutzerrechte",
-      "icon": "fa fa-user-shield"
+      }
     },
     {
-      "admin": true,
       "title": "Admin Custom",
+      "icon": "fa fa-cog",
+      "admin": true,
       "url": {
         "page": "ext_example",
         "params": {
           "view": "custom",
           "admin": "true"
         }
-      },
-
-      "icon": "fa fa-cog"
+      }
     }
     
 

@@ -3,7 +3,7 @@
 class extExampleHtml extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - HTML';
+		return 'Example Extension - HTML';
 	}
 
 	public function __construct($request = [], $extension = []) {
@@ -18,7 +18,7 @@ class extExampleHtml extends AbstractPage {
 
 		
 		$this->render([
-			"tmplHTML" => "<div>Hier wird HTML angezeigt !!!</div>"
+			"tmplHTML" => "<div>Hier wird plain HTML angezeigt !!!</div>"
 		]);
 
 	}

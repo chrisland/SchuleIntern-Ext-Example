@@ -3,7 +3,7 @@
 class extExampleFrontend extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - Frontend';
+		return 'Example Extension - Frontend';
 	}
 
 	public function __construct($request = [], $extension = []) {

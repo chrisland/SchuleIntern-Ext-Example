@@ -3,7 +3,7 @@
 class extExampleAdminDefault extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - Admin Einstellungen';
+		return 'Example Extension - Admin Einstellungen';
 	}
 
 	public function __construct($request = [], $extension = []) {

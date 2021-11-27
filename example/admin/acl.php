@@ -3,7 +3,7 @@
 class extExampleAdminAcl extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - Admin Benutzerrechte';
+		return 'Example Extension - Admin Benutzerrechte';
 	}
 
 	public function __construct($request = [], $extension = []) {

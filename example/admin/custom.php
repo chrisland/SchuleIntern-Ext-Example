@@ -3,7 +3,7 @@
 class extExampleAdminCustom extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - Admin Custom Page';
+		return 'Example Extension - Admin Custom Page';
 	}
 
 	public function __construct($request = [], $extension = []) {

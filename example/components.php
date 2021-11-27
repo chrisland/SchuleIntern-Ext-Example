@@ -3,7 +3,7 @@
 class extExampleComponents extends AbstractPage {
 	
 	public static function getSiteDisplayName() {
-		return 'Example Module - Style Components';
+		return 'Example Extension - Style Components';
 	}
 
 	public function __construct($request = [], $extension = []) {
