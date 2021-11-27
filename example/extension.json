@@ -1,6 +1,6 @@
 {
   "name": "Example Extension",
-  "uniqid": "ext.core.example",
+  "uniqid": "ext.example.default",
   "version": "6",
 
   "requiredVersion": "1.2.2",
