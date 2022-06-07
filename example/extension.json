@@ -1,7 +1,7 @@
 {
   "name": "Example Extension",
   "uniqid": "ext.example.default",
-  "version": "6",
+  "version": "7",
 
   "requiredVersion": "1.2.2",
 
@@ -21,6 +21,16 @@
       "position": "header",
       "class": "extExampleWidgetCounter",
       "params": {}
+    },
+    {
+      "title": "Dashboard Example",
+      "uniqid": "example.dashboard",
+      "position": "dashboard",
+      "class": "extExampleWidgetDashboard",
+      "params": {
+        "width": 2,
+        "height": 1
+      }
     }
   ],
 
